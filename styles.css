@@ -4,5 +4,59 @@
 }
 
 body {
+    display: flex;
     font-family: 'Pixelify';
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.graphic-container {
+    background: url(./img/pikachu.jpg) no-repeat;
+    background-position: 70% 0;
+    background-size: cover;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+
+    & a {
+        color: yellow;
+    }
+
+    & a:visited {
+        color: orange;
+    }
+}
+
+.title-bar {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.logo {
+    height: 72px;
+    margin-right: 12px;
+    width: 72px;
+}
+
+.photo-creds {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    font-size: 28px;
+    justify-content: center;
+}
+
+.content-container {
+    background-color: yellow;
+    flex: auto;
+    width: 70%;
 }

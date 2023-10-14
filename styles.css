@@ -14,13 +14,13 @@ body {
 
 .graphic-container {
     background: url(./img/pikachu.jpg) no-repeat;
-    background-position: 70% 0;
+    background-position: 75% 0;
     background-size: cover;
     display: flex;
     flex: auto;
     flex-direction: column;
     justify-content: space-between;
-    width: 30%;
+    width: 35%;
 
     & a {
         color: yellow;
@@ -29,34 +29,92 @@ body {
     & a:visited {
         color: orange;
     }
-}
 
-.title-bar {
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    font-size: 72px;
-    font-weight: 500;
-    justify-content: center;
-}
+    .title-bar {
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        font-size: 72px;
+        font-weight: 500;
+        justify-content: center;
+    }
 
-.logo {
-    height: 72px;
-    margin-right: 12px;
-    width: 72px;
-}
+    .logo {
+        height: 72px;
+        margin-right: 12px;
+        width: 72px;
+    }
 
-.photo-creds {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    font-size: 28px;
-    justify-content: center;
+    .photo-creds {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        font-size: 28px;
+        justify-content: center;
+    }
 }
 
 .content-container {
-    background-color: yellow;
-    flex: auto;
-    width: 70%;
+    align-items: center;
+    background-color: rgb(255, 240, 0);
+    color: rgb(170, 75, 10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+
+    .hero-container {
+        align-items: end;
+        display: flex;
+        font-size: 28px;
+        height: 35%;
+        margin: 100px 0;
+        width: 80%;
+    }
+
+    .form-container {
+        background-color: yellow;
+        border-radius: 12px;
+        box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.2);
+        height: 30%;
+        width: 90%;
+    }
+
+    .submit-container {
+        height: 35%;
+        margin: 50px 0;
+        width: 80%;
+
+        .submit-button {
+            background-color: rgb(255, 125, 125);
+            border-color: rgb(255, 50, 50);
+            border-radius: 6px;
+            box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+            color: rgb(120, 50, 0);
+            font-family: inherit;
+            font-size: 28px;
+            font-weight: 500;
+            padding: 3px 30px;
+        }
+
+        .account-container {
+            display: flex;
+            gap: 10px;
+
+            .account-text {
+                font-size: 20px;
+            }
+
+            .log-in {
+                color: red;
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            .log-in:hover {
+                font-size: 22px;
+            }
+        }
+    }
 }

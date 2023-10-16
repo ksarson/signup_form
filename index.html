@@ -41,9 +41,42 @@
                     <br />
                 </div>
             </div>
-            <div class="form-container">FORM</div>
+            <div class="form-container">
+                <div class="form-title">Let's do this!</div>
+                <form id="account-form" action="#">
+                    <div class="column">
+                        <label for="first-name" class="name">First Name</label>
+                        <input id="first-name" type="text" class="name" />
+                        <label for="email" class="email">Email</label>
+                        <input id="email" type="email" class="email" />
+                        <label for="password" class="password">Password</label>
+                        <input
+                            id="password"
+                            type="password"
+                            class="password"
+                            id="password"
+                        />
+                    </div>
+                    <div class="column">
+                        <label for="last-name" class="name">Last Name</label>
+                        <input id="last-name" type="text" class="name" />
+                        <label for="phone" class="phone">Phone Number</label>
+                        <input id="phone" type="tel" class="phone" />
+                        <label for="password-confirm" class="password-confirm"
+                            >Confirm Password</label
+                        >
+                        <input
+                            id="password-confirm"
+                            type="password"
+                            class="password-confirm"
+                        />
+                    </div>
+                </form>
+            </div>
             <div class="submit-container">
-                <button class="submit-button">CREATE ACCOUNT</button>
+                <button id="submit-button" class="submit-button">
+                    CREATE ACCOUNT
+                </button>
                 <br />
                 <br />
                 <div class="account-container">
@@ -53,4 +86,5 @@
             </div>
         </div>
     </body>
+    <script src="doStuff.js"></script>
 </html>

@@ -2,12 +2,21 @@ function submitForm() {
     const form = document.getElementById('account-form');
 
     // Perform custom validation only for passwords
-    const password = form.querySelector('#password').value;
-    const confirmPassword = form.querySelector('#password-confirm').value;
+    const password = document.getElementById('password');
+    const passwordVal = form.querySelector('#password').value;
+    const confirmPassword = document.getElementById('password-confirm');
+    const confirmPasswordVal = form.querySelector('#password-confirm').value;
+    const passwordMatch = document.getElementById('password-match');
 
-    if (password !== confirmPassword) {
+    password.style.border = 'solid rgba(0, 0, 0, 0.2) 2px';
+    confirmPassword.style.border = 'solid rgba(0, 0, 0, 0.2) 2px';
+    passwordMatch.style.visibility = 'hidden';
+
+    if (passwordVal !== confirmPasswordVal) {
         // Display an error message or take any other necessary actions
-        console.log('Passwords do not match');
+        password.style.border = 'solid red 2px';
+        confirmPassword.style.border = 'solid red 2px';
+        passwordMatch.style.visibility = 'visible';
         return;
     }
 

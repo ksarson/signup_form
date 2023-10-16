@@ -114,6 +114,15 @@ body {
             & input:invalid {
                 border: solid red 1px;
             }
+
+            .password {
+                margin-bottom: 0;
+            }
+
+            .password-match {
+                color: red;
+                visibility: hidden;
+            }
         }
     }
 
